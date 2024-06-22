@@ -5,6 +5,10 @@ base-version: '5.15-22.08'
 runtime-version: '5.15-22.08'
 sdk: org.kde.Sdk
 command: scide
+rename-icon: supercollider
+rename-icon: sc_ide
+rename-desktop-file: SuperColliderIDE.desktop
+
 modules:
   - name: SuperCollider
     buildsystem: cmake-ninja
