@@ -36,10 +36,6 @@ modules:
       - type: archive
         url: https://github.com/supercollider/sc3-plugins/releases/download/Version-3.13.0/sc3-plugins-3.13.0-Source.tar.bz2
         sha256: f8deeb861d402e2a72db51d40b48c443690261b5a53af78983d4cf7ba76717a2
-  #quarks need git
-  #modified from
-  #https://github.com/flathub/org.freecadweb.FreeCAD/blob/919a68d4c8e8b17a482cf2a815940a9fe23a788b/org.freecadweb.FreeCAD.yaml
-  #https://github.com/flathub/com.valvesoftware.Steam.Utility.steamtinkerlaunch/blob/93d7da35b1941e0de073d8b874d827a55d3e6e28/modules/git.yml
   - name: git
     make-args:
       - NO_TCLTK=YesPlease
@@ -55,7 +51,6 @@ modules:
       - type: archive
         url: https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.39.0.tar.xz
         sha256: ba199b13fb5a99ca3dec917b0bd736bc0eb5a9df87737d435eddfdf10d69265b
-#https://github.com/flathub/com.bitwig.BitwigStudio/blob/master/com.bitwig.BitwigStudio.yaml
 finish-args:
   # We need MIDI, Audio, USB, DRI, and realtime performances
   - --device=all
